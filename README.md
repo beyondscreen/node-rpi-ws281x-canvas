@@ -35,7 +35,7 @@ This will draw a blue rectangle on the LED-Grid.
 
     var ws281x = require('rpi-ws281x-native'),
         canvas = require('rpi-ws281x-canvas').create(10,10),
-        ctx = canvas.getContext();
+        ctx = canvas.getContext('2d');
 
     ws281x.init(100);
 
