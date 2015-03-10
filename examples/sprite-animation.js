@@ -8,7 +8,7 @@ var IMAGE_DIR = __dirname + '/data/jslogo';
 var FPS = 10;
 
 var canvas = ws281xCanvas.create(10,10),
-    Image = canvas.Image;
+    Image = ws281xCanvas.Image;
 
 function loadImages(imagePath, callback) {
     var files = fs.readdirSync(imagePath)
@@ -43,4 +43,6 @@ function startRendering(images) {
     }, 1000/FPS);
 }
 
-loadImages(IMAGE_DIR, startRendering);
+loadImages(IMAGE_DIR, function(err, images) {
+    startRendering(images)
+});
