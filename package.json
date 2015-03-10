@@ -1,0 +1,38 @@
+{
+  "name": "rpi-ws281x-canvas",
+  "version": "0.1.0",
+  "description": "(raspberry-pi *only*) library to control a grid of ws2812-leds using a canvas",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.33"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "demo": "node examples/sprite-animation.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raspberry-node/node-rpi-ws281x-canvas.git"
+  },
+  "keywords": [
+    "raspberry-pi",
+    "ws281x",
+    "ws2812",
+    "ws2811",
+    "led",
+    "canvas",
+    "hardware"
+  ],
+  "author": "Martin Schuhfuss <m.schuhfuss@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raspberry-node/node-rpi-ws281x-canvas/issues"
+  },
+  "homepage": "https://github.com/raspberry-node/node-rpi-ws281x-canvas",
+  "devDependencies": {
+    "async": "^0.9.0",
+    "canvas": "^1.2.1"
+  }
+}
